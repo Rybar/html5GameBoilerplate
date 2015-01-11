@@ -28,7 +28,7 @@ var particle = {
             
         return Math.sqrt(dx * dx + dy + dy);
         
-    }
+    },
     
     gravitateTo: function(p2) {
         var grav = vector.create(0,0),
@@ -38,7 +38,7 @@ var particle = {
         grav.setAngle(this.angleTo(p2));
         
         this.velocity.addTo(grav);
-    }
+    },
     
     update: function () {
         this.velocity.addTo(this.gravity);
